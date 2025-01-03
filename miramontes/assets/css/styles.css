@@ -1,0 +1,12 @@
+@font-face {
+    font-family: DiloWorld;
+    src: url('../fonts/DiloWorld.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: DiloWorld, sans-serif !important;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
