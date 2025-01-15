@@ -71,7 +71,7 @@ p {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 50px;
+    height: 100%;
     width: 100px;
     outline: black;
     background-color: rgb(1, 56, 255);
@@ -91,3 +91,4 @@ p {
     height: 500px; /* Establece una altura fija */
     object-fit: contain; /* Asegura que toda la imagen sea visible */
 }
+
