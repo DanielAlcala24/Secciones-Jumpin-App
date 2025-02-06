@@ -1,0 +1,96 @@
+@font-face {
+    font-family: DiloWorld;
+    src: url('../fonts/DiloWorld.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: DiloWorld, sans-serif !important;
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px 0;
+    background-color: #e9545c; /* Ajuste: Agregado el fondo al header en lugar de al h1 */
+    margin-bottom: 25PX;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    padding: 1px 0; /* Añadido: Espaciado interno para que el fondo sea visible */
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.combos-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.combos-container h2 {
+    display: inline-block; /* Hace que el fondo se ajuste al tamaño del texto */
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding: 1px 20px; /* Añadido: Espaciado interno para que el fondo sea visible */
+    background-color: #e9545c;
+    border-radius: 30px;
+}
+
+.carousel-caption {
+    position: relative !important;
+    display: inline-block !important;
+    right: 0% !important;
+    left: 0% !important;
+    padding-top: 2.25rem !important;
+}
+
+h5 {
+    font-size: 28px !important;
+}
+
+p {
+    font-size: 22px;
+    display: inline-block;
+}
+
+.precio {
+    background: linear-gradient(to right, #184ab7, #6d109f) !important;
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100%;
+    width: 100px;
+    outline: black;
+    background-color: rgb(72, 72, 72);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    
+}
+
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    height: 300px; /* Establece una altura fija */
+    object-fit: contain; /* Asegura que toda la imagen sea visible */
+}
+
+.carousel-inner  {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    height: 450px; /* Establece una altura fija */
+    object-fit: contain; /* Asegura que toda la imagen sea visible */
+}
+
