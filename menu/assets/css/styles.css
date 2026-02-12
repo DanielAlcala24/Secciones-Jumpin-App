@@ -13,7 +13,8 @@ header {
     margin-top: 50px;
     text-align: center;
     padding: 0px 0;
-    background-color: #e9545c; /* Ajuste: Agregado el fondo al header en lugar de al h1 */
+    background-color: #e9545c;
+    /* Ajuste: Agregado el fondo al header en lugar de al h1 */
     margin-bottom: 25PX;
 }
 
@@ -23,7 +24,8 @@ header h1 {
     letter-spacing: 2px;
     margin: 0;
     color: rgba(255, 255, 255, 1);
-    padding: 1px 0; /* Añadido: Espaciado interno para que el fondo sea visible */
+    padding: 1px 0;
+    /* Añadido: Espaciado interno para que el fondo sea visible */
 }
 
 .main {
@@ -39,11 +41,13 @@ header h1 {
 }
 
 .combos-container h2 {
-    display: inline-block; /* Hace que el fondo se ajuste al tamaño del texto */
+    display: inline-block;
+    /* Hace que el fondo se ajuste al tamaño del texto */
     color: #ffffff;
     font-size: 40px;
     margin-bottom: 10px;
-    padding: 1px 20px; /* Añadido: Espaciado interno para que el fondo sea visible */
+    padding: 1px 20px;
+    /* Añadido: Espaciado interno para que el fondo sea visible */
     background-color: #e9545c;
     border-radius: 30px;
 }
@@ -70,25 +74,35 @@ p {
     border-radius: 20px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.price-font {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     height: 100%;
     width: 100px;
     outline: black;
     background-color: rgb(72, 72, 72);
     background-size: 100%, 100%;
     border-radius: 50%;
-    
+
 }
 
 .carousel-inner img {
-    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
-    height: 300px; /* Establece una altura fija */
-    object-fit: contain; /* Asegura que toda la imagen sea visible */
+    width: 100%;
+    /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    height: 300px;
+    /* Establece una altura fija */
+    object-fit: contain;
+    /* Asegura que toda la imagen sea visible */
 }
 
-.carousel-inner  {
-    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
-    height: 500px; /* Establece una altura fija */
-    object-fit: contain; /* Asegura que toda la imagen sea visible */
+.carousel-inner {
+    width: 100%;
+    /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    height: 500px;
+    /* Establece una altura fija */
+    object-fit: contain;
+    /* Asegura que toda la imagen sea visible */
 }
-
