@@ -12,7 +12,7 @@ async function loadPromos() {
         const { data: promos, error } = await supabaseClient
             .from('promotions') // Nombre de la tabla actualizado a 'promotions'
             .select('*')
-            .order('created_at', { ascending: false });
+            .order('order_index', { ascending: true });
 
         if (error) throw error;
 
