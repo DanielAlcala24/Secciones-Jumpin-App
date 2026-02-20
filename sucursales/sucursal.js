@@ -109,8 +109,12 @@ async function loadBranchData() {
         // Atracciones (JSONB)
         // Estructura esperada: [{ title: "Dodgeball", image_url: "..." }]
         const attractionsContainer = document.getElementById('attractions-container');
-        if (branch.attractions && Array.isArray(branch.attractions)) {
-            attractionsContainer.innerHTML = branch.attractions.map((a, idx) => {
+        const validAttractions = (branch.attractions && Array.isArray(branch.attractions))
+            ? branch.attractions.filter(a => a.src || a.image_url || a.title || a.alt)
+            : [];
+
+        if (validAttractions.length > 0) {
+            attractionsContainer.innerHTML = validAttractions.map((a, idx) => {
                 const title = (a.alt || a.title || '').toUpperCase();
                 const imageUrl = a.src || a.image_url || '';
                 return `
@@ -129,8 +133,12 @@ async function loadBranchData() {
         // Galería (JSONB)
         // Estructura esperada: ["url1", "url2", ...] o [{url: "..."}]
         const galleryContainer = document.getElementById('gallery-container');
-        if (branch.gallery && Array.isArray(branch.gallery)) {
-            galleryContainer.innerHTML = branch.gallery.map((img, idx) => {
+        const validGallery = (branch.gallery && Array.isArray(branch.gallery))
+            ? branch.gallery.filter(img => typeof img === 'string' ? img : (img.src || img.url))
+            : [];
+
+        if (validGallery.length > 0) {
+            galleryContainer.innerHTML = validGallery.map((img, idx) => {
                 const url = typeof img === 'string' ? img : (img.src || img.url);
                 const altText = typeof img === 'string' ? 'Galería sucursal' : (img.alt || 'Galería sucursal');
                 return `
