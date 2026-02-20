@@ -39,6 +39,20 @@ async function loadBranchData() {
         // Poblar datos básicos
         document.title = `${branch.name} - Jump-In`;
         document.getElementById('branch-name-header').innerText = branch.name.toUpperCase();
+
+        // Actualizar links de cotización con el nombre de la sucursal
+        const quoteBtn = document.getElementById('quote-party-btn');
+        if (quoteBtn) {
+            const message = `¡Hola! Me gustaría cotizar mi fiesta en Jump-In. Aquí están mis datos:\n\n* Nombre completo del tutor: \n* Número de invitados niños: \n* Número de invitados adultos: \n* Correo electrónico: \n* Número de teléfono: \n* Sucursal: ${branch.name}\n* Fecha del evento: \n* Nombre del festejado(a): \n* Edad que cumple: \n* Hora de ingreso: `;
+            quoteBtn.href = `https://wa.me/525536441494?text=${encodeURIComponent(message)}`;
+        }
+
+        const eventBtn = document.getElementById('quote-event-btn');
+        if (eventBtn) {
+            const message = `¡Hola! Me gustaría cotizar un Evento Empresarial en Jump-In. Para poder reservar me podría brindar los siguientes datos por favor ☺️🥳\n\n* Nombre completo del responsable: \n* Número de asistentes: \n* Correo electrónico: \n* Número de teléfono: \n* Sucursal: ${branch.name}\n* Fecha del evento: \n* Nombre de la empresa: `;
+            eventBtn.href = `https://wa.me/525536441494?text=${encodeURIComponent(message)}`;
+        }
+
         document.getElementById('branch-address').innerText = `DIRECCIÓN: ${branch.address}`;
         document.getElementById('branch-phone').innerHTML = `TELÉFONO: ${branch.phone}`;
 
