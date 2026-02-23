@@ -56,12 +56,20 @@
 
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-            height: 60px;
-            width: 60px;
+            height: 35px;
+            width: 35px;
             outline: rgb(0, 0, 0);
             background-color: rgb(0, 59, 186);
-            background-size: 100%, 100%;
+            background-size: 60%, 60%;
             border-radius: 50%;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: 50% !important;
+            transform: translateY(-50%);
+            width: 40px !important;
+            height: 40px !important;
         }
 
         .carousel-inner img {
@@ -177,11 +185,11 @@
         <section class="combos-container shadow-2xl" id="attractions-section">
             <h2>ATRACCIONES</h2>
             <div id="carouselExampleCaptions4" class="carousel slide">
-                <button class="carousel-control-prev" style="left: -15px; top: 115px;" type="button"
+                <button class="carousel-control-prev" style="left: -15px;" type="button"
                     data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" style="right: -15px; top: 115px;" type="button"
+                <button class="carousel-control-next" style="right: -15px;" type="button"
                     data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
@@ -195,11 +203,11 @@
         <section class="combos-container shadow-2xl" id="gallery-section">
             <h2>GALERÍA</h2>
             <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel">
-                <button class="carousel-control-prev" style="left: -15px; top: 115px;" type="button"
+                <button class="carousel-control-prev" style="left: -15px;" type="button"
                     data-bs-target="#gallery-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" style="right: -15px; top: 115px;" type="button"
+                <button class="carousel-control-next" style="right: -15px;" type="button"
                     data-bs-target="#gallery-carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
