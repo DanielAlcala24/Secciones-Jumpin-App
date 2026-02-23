@@ -164,9 +164,10 @@ async function loadBranchData() {
             document.getElementById('gallery-section').style.display = 'none';
         }
 
-        // Imagen Destacada
-        if (branch.featured_image) {
-            document.getElementById('featured-image').src = branch.featured_image;
+        // Ocultar sección de imagen destacada (a petición del usuario)
+        const featuredSection = document.getElementById('featured-image').closest('section');
+        if (featuredSection) {
+            featuredSection.style.display = 'none';
         }
 
         // Mostrar contenido
