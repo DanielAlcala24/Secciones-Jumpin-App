@@ -62,7 +62,7 @@ async function loadMenu() {
                                     <div class="carousel-caption d-md-block">
                                         <h5>${item.title.toUpperCase()}</h5>
                                         ${item.description ? `<p>${item.description}</p><br>` : ''}
-                                        <p class="precio text-4xl price-font" style="padding: 5px 10px 5px 10px;">${item.price}</p>
+                                        ${(!item.price || (typeof item.price === 'string' ? parseFloat(item.price.replace(/[^0-9.-]/g, '')) === 0 : Number(item.price) === 0)) ? '' : `<p class="precio text-4xl price-font" style="padding: 5px 10px 5px 10px;">${item.price}</p>`}
                                     </div>
                                 </div>
                             `).join('')}
